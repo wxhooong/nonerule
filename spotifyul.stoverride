@@ -5,13 +5,12 @@ http:
   mitm:
     - "spclient.wg.spotify.com"
   script:
-    - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)
-      name: spotify-proto
-      type: response
-      require-body: true
+    - match: ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)
+      name: spotifyul
+      type: request
+      require-body: false
       timeout: 10
-      
 script-providers:
-  spotify-proto:
+  spotifyul:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
-    interval:  86400
+    interval: 86400
