@@ -1,7 +1,0 @@
-payload:
- - DOMAIN-KEYWORD,google
- - DOMAIN-KEYWORD,youtube
- - DOMAIN-SUFFIX,fonts.googleapis.com
- - DOMAIN-SUFFIX,fonts.gstatic.com
- - DOMAIN-SUFFIX,i.ytimg.com
- - DOMAIN-SUFFIX,yt3.ggpht.com
