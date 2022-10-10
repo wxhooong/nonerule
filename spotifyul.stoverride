@@ -13,5 +13,5 @@ http:
       
 script-providers:
   kuwoD:
-    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js
+    url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
     interval:  86400
