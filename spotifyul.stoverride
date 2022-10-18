@@ -1,16 +1,20 @@
-name: spotifyul
+name: spotify-proto
 desc: test
 
 http:
   mitm:
     - "spclient.wg.spotify.com"
+    - "%APPEND% spclient.wg.spotify.com"
+    - spclient.wg.spotify.com
+    - %APPEND% spclient.wg.spotify.com
   script:
     - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
-      name: spotifyul
+      name: spotify-proto
       type: response
       require-body: true
-      timeout: 10
+      timeout: 20
+      argument: ''
 script-providers:
-  spotifyul:
+  spotify-proto:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
     interval: 86400
