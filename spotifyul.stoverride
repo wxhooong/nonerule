@@ -7,7 +7,7 @@ http:
   script:
     - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
       name: spotifyul
-      type: request
+      type: response
       require-body: true
       timeout: 10
 script-providers:
