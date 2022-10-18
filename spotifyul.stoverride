@@ -4,7 +4,7 @@ desc: test
 http:
   mitm:
     - "spclient.wg.spotify.com"
-    - "%APPEND% spclient.wg.spotify.com"
+    - %APPEND% spclient.wg.spotify.com
   script:
     - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
       name: spotify-proto
