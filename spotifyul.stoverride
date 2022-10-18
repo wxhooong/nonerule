@@ -10,6 +10,7 @@ http:
       type: response
       require-body: true
       timeout: 10
+      argument: ''
 script-providers:
   spotify-proto:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
